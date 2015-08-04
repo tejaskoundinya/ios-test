@@ -10,4 +10,12 @@
 
 @implementation Bug
 
+-(id)initWithBugName:(NSString *)bugName havingImage:(NSString *)imageName ofSpecies:(NSString *)bugSpecies havingLifeSpan:(NSString *)lifespan {
+    self.bugName = bugName;
+    self.imageName = imageName;
+    self.bugSpecies = bugSpecies;
+    self.lifeSpan = lifespan;
+    return self;
+}
+
 @end

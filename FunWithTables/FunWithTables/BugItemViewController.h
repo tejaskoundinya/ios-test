@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Bug.h"
 
 @interface BugItemViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UIImageView* bugImage;
 @property (nonatomic, weak) IBOutlet UILabel* bugName;
+@property (nonatomic, weak) IBOutlet UILabel* bugSpecies;
+@property (nonatomic, weak) IBOutlet UILabel* lifespan;
 
-@property (nonatomic, strong) NSString* bugNameStr;
-@property (nonatomic, strong) NSString* bugImageName;
+@property (nonatomic, strong) Bug* bug;
 
 @end

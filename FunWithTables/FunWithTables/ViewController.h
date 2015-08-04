@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BugItemViewController.h"
+#import "Bug.h"
 
 @interface ViewController : UIViewController
 
@@ -23,5 +25,11 @@
 
 
 @interface ViewController (TableViewCategory) <UITableViewDelegate, UITableViewDataSource>
+
+@end
+
+@interface ViewController (BugManipulationCategory)
+
+-(Bug*)createNewBugByName:(NSString*)bugName havingImage:(NSString*)imageName ofSpecies:(NSString*)bugSpecies havingLifeSpan:(NSString*)lifespan;
 
 @end

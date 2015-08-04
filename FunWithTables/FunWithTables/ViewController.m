@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "BugItemViewController.h"
 
 @interface ViewController ()
 
@@ -18,11 +17,19 @@
 #pragma mark - View controller overriden methods
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     // Array to store names of Bugs
-    self.bugs = [NSArray arrayWithObjects:@"Lady Bug", @"Boxelder Bug", @"Rainbow Shield Bug", nil];
+    //self.bugs = [NSArray arrayWithObjects:@"Lady Bug", @"Boxelder Bug", @"Rainbow Shield Bug", nil];
     // Array to store file names of Bug images
-    self.bugThumbs = [NSArray arrayWithObjects:@"lady_bug.jpg", @"boxelder_bug.jpg", @"rainbow_shield_bug.jpg", nil];
+    //self.bugThumbs = [NSArray arrayWithObjects:@"lady_bug.jpg", @"boxelder_bug.jpg", @"rainbow_shield_bug.jpg", nil];
+    
+    //NSLog(@"%@", [self createNewBugByName:@"Lady Bug" havingImage:@"lady_bug.jpg" ofSpecies:@"Species" havingLifeSpan:@"5 Years"].bugName);
+    
+    // Array of bugs
+    self.bugs = [NSArray arrayWithObjects:[self createNewBugByName:@"Lady Bug" havingImage:@"lady_bug.jpg" ofSpecies:@"Species" havingLifeSpan:@"5 Years"],
+                 [self createNewBugByName:@"Boxelder Bug" havingImage:@"boxelder_bug.jpg" ofSpecies:@"Species" havingLifeSpan:@"1 Year"],
+                 [self createNewBugByName:@"Rainbow Shield Bug" havingImage:@"rainbow_shield_bug.jpg" ofSpecies:@"Species" havingLifeSpan:@"10 Years"],
+                 nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,7 +45,7 @@
 
 #pragma mark - Table view delegates
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.bugs count];
+    return self.bugs.count;
 }
 
 /*
@@ -77,10 +84,12 @@ It is always a good practice to customize a cell within a different method for p
 }
 
 -(void)configureCell:(UITableViewCell*)cell forIndexPath:(NSIndexPath*)indexPath {
+    // Get reference of selected bug
+    Bug* bug = [self.bugs objectAtIndex:indexPath.row];
     // Setting the text of a cell
-    cell.textLabel.text = [self.bugs objectAtIndex:indexPath.row];
+    cell.textLabel.text = bug.bugName;
     // Setting thumbnail image of a cell
-    cell.imageView.image = [UIImage imageNamed:[self.bugThumbs objectAtIndex:indexPath.row]];
+    cell.imageView.image = [UIImage imageNamed:bug.imageName];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -90,9 +99,29 @@ It is always a good practice to customize a cell within a different method for p
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([[segue identifier] isEqualToString:@"TableItemSegue"]) {
         BugItemViewController* bugItemViewController = [segue destinationViewController];
-        bugItemViewController.bugNameStr = [self.bugs objectAtIndex: [self.tableView indexPathForSelectedRow].row];
-        bugItemViewController.bugImageName = [self.bugThumbs objectAtIndex: [self.tableView indexPathForSelectedRow].row];
+        bugItemViewController.bug = [self.bugs objectAtIndex: [self.tableView indexPathForSelectedRow].row];
     }
+}
+
+@end
+
+@implementation ViewController (BugManipulationCategory)
+
+#pragma mark - Bug Manipulation Functions
+
+-(Bug *)createNewBugByName:(NSString *)bugName havingImage:(NSString *)imageName ofSpecies:(NSString *)bugSpecies havingLifeSpan:(NSString *)lifespan {
+    /*
+    Bug* bug = [[Bug alloc]init];
+    bug.bugName = bugName;
+    bug.imageName = imageName;
+    bug.bugSpecies = bugSpecies;
+    bug.lifeSpan = lifespan;
+    return bug;
+    */
+    
+    // Create new bug object by calling a constructor
+    Bug* bug = [[Bug alloc]initWithBugName:bugName havingImage:imageName ofSpecies:bugSpecies havingLifeSpan:lifespan];
+    return bug;
 }
 
 @end

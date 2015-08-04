@@ -17,8 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.bugName setText:self.bugNameStr];
-    [self.bugImage setImage:[UIImage imageNamed:self.bugImageName]];
+    [self.bugImage setImage:[UIImage imageNamed:self.bug.imageName]];
+    [self.bugName setText:self.bug.bugName];
+    [self.bugSpecies setText:self.bug.bugSpecies];
+    [self.lifespan setText:self.bug.lifeSpan];
+    
 }
 
 - (void)didReceiveMemoryWarning {

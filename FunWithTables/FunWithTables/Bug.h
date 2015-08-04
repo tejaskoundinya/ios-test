@@ -15,4 +15,6 @@
 @property NSString* bugSpecies;
 @property NSString* lifeSpan;
 
+-(id)initWithBugName:(NSString *)bugName havingImage:(NSString *)imageName ofSpecies:(NSString *)bugSpecies havingLifeSpan:(NSString *)lifespan;
+
 @end
