@@ -10,4 +10,7 @@
 
 @interface MessageBoard : NSObject
 
+// Function to display a message
+-(void)displayMessage:(NSString*)message;
+
 @end

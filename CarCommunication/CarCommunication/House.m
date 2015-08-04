@@ -1,25 +1,23 @@
 //
-//  Car.m
-//  Car Communication
+//  House.m
+//  CarCommunication
 //
 //  Created by Tejas Koundinya on 8/4/15.
 //  Copyright (c) 2015 Tejas Koundinya. All rights reserved.
 //
 
-#import "Car.h"
-#import "MusicPlayer.h"
-#import "MessageBoard.h"
+#import "House.h"
 
-@implementation Car
+@implementation House
 
-- (id)init {
+-(id)init {
     self.musicPlayer = [[MusicPlayer alloc]init];
     self.musicPlayer.delegate = self;
-    self.messageBoard = [[MessageBoard alloc]init];
     return self;
 }
 
-- (void)playSomeMusic {
+// Function to play music
+-(void)playSomeMusic {
     [self.musicPlayer startPlayingMusic];
 }
 

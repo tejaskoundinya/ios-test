@@ -10,4 +10,8 @@
 
 @implementation MessageBoard
 
+- (void)displayMessage:(NSString*)message {
+    NSLog(@"%@", message);
+}
+
 @end

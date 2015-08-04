@@ -17,6 +17,7 @@
 		968AB17D1B7094C100EFA26E /* MusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 968AB1781B7094C100EFA26E /* MusicPlayer.m */; };
 		968AB17E1B7094C100EFA26E /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 968AB17A1B7094C100EFA26E /* Car.m */; };
 		968AB17F1B7094C100EFA26E /* MessageBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 968AB17C1B7094C100EFA26E /* MessageBoard.m */; };
+		968AB1821B70AC0100EFA26E /* House.m in Sources */ = {isa = PBXBuildFile; fileRef = 968AB1811B70AC0100EFA26E /* House.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		968AB17A1B7094C100EFA26E /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		968AB17B1B7094C100EFA26E /* MessageBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBoard.h; sourceTree = "<group>"; };
 		968AB17C1B7094C100EFA26E /* MessageBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageBoard.m; sourceTree = "<group>"; };
+		968AB1801B70AC0100EFA26E /* House.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = House.h; sourceTree = "<group>"; };
+		968AB1811B70AC0100EFA26E /* House.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = House.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 			children = (
 				968AB1771B7094C100EFA26E /* MusicPlayer.h */,
 				968AB1781B7094C100EFA26E /* MusicPlayer.m */,
+				968AB1801B70AC0100EFA26E /* House.h */,
+				968AB1811B70AC0100EFA26E /* House.m */,
 				968AB1791B7094C100EFA26E /* Car.h */,
 				968AB17A1B7094C100EFA26E /* Car.m */,
 				968AB17B1B7094C100EFA26E /* MessageBoard.h */,
@@ -234,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968AB1821B70AC0100EFA26E /* House.m in Sources */,
 				968AB17F1B7094C100EFA26E /* MessageBoard.m in Sources */,
 				968AB17E1B7094C100EFA26E /* Car.m in Sources */,
 				968AB15A1B70949700EFA26E /* ViewController.m in Sources */,

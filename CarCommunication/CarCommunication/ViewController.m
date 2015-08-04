@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Car.h"
+#import "House.h"
 
 @interface ViewController ()
 
@@ -18,8 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    Car* car = [[Car alloc]init];
-    [car playSomeMusic];
+    
+    // Creating an object of class Car
+//    Car* car = [[Car alloc]init];
+    // Invoking function playSomeMusic in object car
+//    [car playSomeMusic];
+    // Creating an object of class House
+    House* house = [[House alloc]init];
+    // Creating an object of class House
+    [house playSomeMusic];
 }
 
 - (void)didReceiveMemoryWarning {
