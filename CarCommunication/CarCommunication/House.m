@@ -23,12 +23,12 @@
 
 // Implementation of musicPlayerDidStartPlaying delcared in MusicPlayerDelegate
 -(void)musicPlayerDidStartPlaying:(MusicPlayer *)musicPlayer {
-    
+    NSLog(@"House Music Player Start");
 }
 
 // Implementation of musicPlayerDidEndPlaying delcared in MusicPlayerDelegate
 -(void)musicPlayerDidEndPlaying:(MusicPlayer *)musicPlayer {
-    
+    NSLog(@"House Music Player End");
 }
 
 @end

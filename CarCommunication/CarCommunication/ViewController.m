@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Car.h"
-#import "House.h"
+
 
 @interface ViewController ()
 
@@ -20,19 +19,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // Creating an object of class Car
-//    Car* car = [[Car alloc]init];
-    // Invoking function playSomeMusic in object car
-//    [car playSomeMusic];
-    // Creating an object of class House
-    House* house = [[House alloc]init];
-    // Creating an object of class House
-    [house playSomeMusic];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)didTapHomeMusicButton:(id)sender {
+    // Creating an object of class House
+    self.house = [[House alloc]init];
+    // Invoking function playSomeMusic in object house
+    [self.house playSomeMusic];
+}
+
+- (IBAction)didTapCarMusicButton:(id)sender {
+    // Creating an object of class Car
+    self.car = [[Car alloc]init];
+    // Invoking function playSomeMusic in object car
+    [self.car playSomeMusic];
 }
 
 @end

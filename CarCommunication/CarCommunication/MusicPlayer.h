@@ -15,7 +15,7 @@
 
 @property NSString* message;
 // Declaring delegate of type MusicPlayerDelegate
-@property (nonatomic,weak) id<MusicPlayerDelegate> delegate;
+@property (nonatomic, weak) id<MusicPlayerDelegate> delegate;
 // timer handles timed tasks
 @property NSTimer* timer;
 

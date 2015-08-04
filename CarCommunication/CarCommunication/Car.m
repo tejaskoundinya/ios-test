@@ -25,12 +25,12 @@
 
 // Implementation of musicPlayerDidStartPlaying delcared in MusicPlayerDelegate
 -(void)musicPlayerDidStartPlaying:(MusicPlayer *)musicPlayer {
-    
+    NSLog(@"Car Music Player Start");
 }
 
 // Implementation of musicPlayerDidEndPlaying delcared in MusicPlayerDelegate
 -(void)musicPlayerDidEndPlaying:(MusicPlayer *)musicPlayer {
-    
+    NSLog(@"Car Music Player End");
 }
 
 @end
