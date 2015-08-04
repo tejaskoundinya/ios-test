@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>CB4FFF97-B753-4E7B-81F9-595A7FDDAE42</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>CarCommunication</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>ACEF53A1AACB907FCB27F33C84A901DFE342FE5E</key>
 		<string>https://github.com/tejaskoundinya/ios-test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CarCommunication/CarCommunication.xcodeproj/project.xcworkspace</string>
+	<string>CarCommunication/CarCommunication.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>ACEF53A1AACB907FCB27F33C84A901DFE342FE5E</key>
