@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B98C5802-4B3C-43B2-9E9F-FBD6FDCB91BE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>FunWithTables</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>ACEF53A1AACB907FCB27F33C84A901DFE342FE5E</key>
 		<string>https://github.com/tejaskoundinya/ios-test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FunWithTables/FunWithTables.xcodeproj/project.xcworkspace</string>
+	<string>FunWithTables/FunWithTables.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>ACEF53A1AACB907FCB27F33C84A901DFE342FE5E</key>

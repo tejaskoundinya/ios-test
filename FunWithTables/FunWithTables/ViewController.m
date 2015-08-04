@@ -28,10 +28,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+//It is always a good practice to implement delegates and data sources of a table view as a different category. Read about categories here: https://developer.apple.com/library/ios/documentation/General/Conceptual/DevPedia-CocoaCore/Category.html
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.tableData count];
 }
 
+//Why dequeReusableCellWithIdentifier?
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     // Identifier to identify the TableView
     static NSString* tableId = @"TableItem";
@@ -48,4 +50,27 @@
     return cell;
 }
 
+
+/*
+It is always a good practice to customize a cell within a different method for purposes of modularity.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Identifier to identify the TableView
+    static NSString* tableId = @"TableItem";
+    // Referencing a cell
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:tableId];
+    if(cell == nil) {
+        // Allocating cell style
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableId];
+    }
+    [self configureCell:cell forIndexPath:indexPath];
+    return cell;
+}
+
+-(void)configureCell:(UITableViewCell*)cell forIndexPath:(NSIndexPath*)indexPath {
+    // Setting the text of a cell
+    cell.textLabel.text = [self.tableData objectAtIndex:indexPath.row];
+    // Setting thumbnail image of a cell
+    cell.imageView.image = [UIImage imageNamed:[self.tableThumbs objectAtIndex:indexPath.row]];
+}
+*/
 @end

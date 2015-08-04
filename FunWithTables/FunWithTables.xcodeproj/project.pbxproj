@@ -66,6 +66,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4E26961B70C71400884222 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				968AB1991B70B6BC00EFA26E /* Main.storyboard */,
+				968AB19C1B70B6BC00EFA26E /* Images.xcassets */,
+				968AB19E1B70B6BC00EFA26E /* LaunchScreen.xib */,
+				968AB1931B70B6BC00EFA26E /* AppDelegate.h */,
+				968AB1941B70B6BC00EFA26E /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		0F4E26971B70C71900884222 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				961E78FF1B70BF57004F75B1 /* boxelder_bug.jpg */,
+				961E79001B70BF57004F75B1 /* lady_bug.jpg */,
+				961E79011B70BF57004F75B1 /* rainbow_shield_bug.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0F4E26981B70C72000884222 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				968AB1961B70B6BC00EFA26E /* ViewController.h */,
+				968AB1971B70B6BC00EFA26E /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0F4E26991B70C72A00884222 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		968AB1831B70B6BC00EFA26E = {
 			isa = PBXGroup;
 			children = (
@@ -87,16 +125,10 @@
 		968AB18E1B70B6BC00EFA26E /* FunWithTables */ = {
 			isa = PBXGroup;
 			children = (
-				961E78FF1B70BF57004F75B1 /* boxelder_bug.jpg */,
-				961E79001B70BF57004F75B1 /* lady_bug.jpg */,
-				961E79011B70BF57004F75B1 /* rainbow_shield_bug.jpg */,
-				968AB1931B70B6BC00EFA26E /* AppDelegate.h */,
-				968AB1941B70B6BC00EFA26E /* AppDelegate.m */,
-				968AB1961B70B6BC00EFA26E /* ViewController.h */,
-				968AB1971B70B6BC00EFA26E /* ViewController.m */,
-				968AB1991B70B6BC00EFA26E /* Main.storyboard */,
-				968AB19C1B70B6BC00EFA26E /* Images.xcassets */,
-				968AB19E1B70B6BC00EFA26E /* LaunchScreen.xib */,
+				0F4E26991B70C72A00884222 /* Views */,
+				0F4E26981B70C72000884222 /* ViewControllers */,
+				0F4E26971B70C71900884222 /* Resources */,
+				0F4E26961B70C71400884222 /* Application */,
 				968AB18F1B70B6BC00EFA26E /* Supporting Files */,
 			);
 			path = FunWithTables;
